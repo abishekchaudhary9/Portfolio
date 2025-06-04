@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My College Project Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Dark gray text */
+            line-height: 1.6;
+        }
+        /* Custom scroll-behavior for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        .section-padding {
+            padding: 4rem 1rem; /* Default padding for sections */
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 2rem; /* Larger padding on medium screens */
+            }
+        }
+        @media (min-width: 1024px) {
+            .section-padding {
+                padding: 8rem 4rem; /* Even larger padding on large screens */
+            }
+        }
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="#" class="text-2xl font-bold text-indigo-600 rounded-md p-2 hover:bg-indigo-50 transition duration-300">Abishek Kumar Chuadhary</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 p-2 rounded-md hover:bg-gray-100">Home</a></li>
+                    <li><a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 p-2 rounded-md hover:bg-gray-100">About</a></li>
+                    <li><a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 p-2 rounded-md hover:bg-gray-100">Projects</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 p-2 rounded-md hover:bg-gray-100">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white section-padding text-center min-h-screen flex items-center justify-center">
+        <div class="container mx-auto px-4">
+            <img src="WhatsApp Image 2025-06-04 at 17.16.12_18fc7e28.jpg" alt="Profile Picture" class="w-36 h-36 object-cover object-center rounded-full mx-auto mb-6 border-4 border-white shadow-lg">
+
+
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Hi, I'm <span class="text-yellow-300">Abishek Kumar Chuadhary</span></h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">A passionate <span class="font-semibold">Student Developer</span> building amazing things.</p>
+            <a href="#projects" class="bg-white text-indigo-700 hover:bg-gray-100 px-8 py-3 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105 card-shadow">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white section-padding">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="WhatsApp Image 2025-06-04 at 18.56.18_def23c0c.jpg" alt="About Me Image" class="rounded-lg card-shadow w-full h-auto">
+                </div>
+                <div class="md:w-1/2 text-gray-700">
+                    <p class="mb-4 text-lg">
+                        Hello! I'm <span class="font-semibold">Abishek Kumar Chuadhary</span>, a student at Aadim College of IT and Managemrnt pursuing BSC.CSIT. I'm deeply passionate about web development, machine learning, data science and love bringing ideas to life through code.
+                    </p>
+                    <p class="mb-4 text-lg">
+                        My journey into programming began with a simple HTML page, a C programming, and since then, I've been continuously learning and exploring new technologies. I enjoy solving complex problems and creating user-friendly applications.
+                    </p>
+                    <p class="mb-6 text-lg">
+                        Outside of coding, I enjoy [mention a hobby, e.g., hiking, reading, playing music. I'm always eager to collaborate on exciting projects and learn from others!
+                    </p>
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-4">My Skills:</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full card-shadow">HTML5</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full card-shadow">CSS3</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full card-shadow">JavaScript</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full card-shadow">Figma</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full card-shadow">Python</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full card-shadow">Git/GitHub</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full card-shadow">QA</span>
+                        <!-- Add more skills as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-100 section-padding">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-lg p-6 card-shadow hover-scale flex flex-col">
+                    <img src="Screenshot 2025-06-04 194503.png" alt="Project 1 Image" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-3">Simple Calculator</h3>
+                    <p class="text-gray-700 mb-4 flex-grow">
+                        A brief description of Project One. This project involved creating a simple calculator using Html, CSS, and JavaScript. It showcases my ability to build interactive web applications and handle user input effectively.
+                    <div class="mt-auto flex justify-between items-center">
+                        <a href="https://github.com/abishekchaudhary9/A-Simple-Calculator.git" class="text-indigo-600 hover:text-indigo-800 font-medium transition duration-300 flex items-center">
+                            View Project
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <span class="text-sm text-gray-500">HTML, CSS, JS</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-lg p-6 card-shadow hover-scale flex flex-col">
+                    <img src="Figure_1.png" alt="Project 2 Image" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-3">Project Title Two</h3>
+                    <p class="text-gray-700 mb-4 flex-grow">
+                        A data-driven project that analyzes passenger data to predict survival chances using machine learning, uncovering insights from one of history’s most famous maritime disasters.
+                    </p>
+                    <div class="mt-auto flex justify-between items-center">
+                        <a href="https://github.com/abishekchaudhary9/Titanic-Survival-Prediction.git" class="text-indigo-600 hover:text-indigo-800 font-medium transition duration-300 flex items-center">
+                            View Project
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <span class="text-sm text-gray-500">Python</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 3
+                <div class="bg-white rounded-lg p-6 card-shadow hover-scale flex flex-col">
+                    <img src="https://placehold.co/600x400/6366f1/ffffff?text=Project+3" alt="Project 3 Image" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-3">Project Title Three</h3>
+                    <p class="text-gray-700 mb-4 flex-grow">
+                        Details about Project Three. This project involved [e.g., data visualization, a machine learning model, game development]. I learned a lot about [specific challenges or techniques].
+                    </p>
+                    <div class="mt-auto flex justify-between items-center">
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium transition duration-300 flex items-center">
+                            View Project
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <span class="text-sm text-gray-500">React, Tailwind CSS</span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white section-padding">
+        <div class="container mx-auto px-4 max-w-2xl">
+            <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">Get in Touch</h2>
+            <div class="bg-gray-50 rounded-lg p-8 card-shadow">
+                <p class="text-center text-lg text-gray-700 mb-6">
+                    Have a question or want to collaborate? Feel free to reach out!
+                </p>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="your.email@example.com" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="5" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 text-white py-3 px-4 rounded-md font-semibold hover:bg-indigo-700 transition duration-300 transform hover:scale-105 card-shadow">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center px-4">
+            <p class="mb-4">&copy; 2025 Abishek Kumar Chuadhary. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">GitHub</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">LinkedIn</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Twitter</a>
+                <!-- Add more social links as needed -->
+            </div>
+        </div>
+    </footer>
+
+    <script>        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Optional: Add a simple form submission handler (for demonstration)
+        // In a real project, you'd send this data to a backend server.
+        const contactForm = document.querySelector('#contact form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent default form submission
+
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                // Basic validation
+                if (!name || !email || !message) {
+                    // Instead of alert, you'd show a message in a div on the page
+                    console.error('Please fill in all fields.');
+                    // Example of showing a message on the page:
+                    // const messageDiv = document.createElement('div');
+                    // messageDiv.textContent = 'Please fill in all fields.';
+                    // messageDiv.className = 'text-red-500 text-center mt-4';
+                    // contactForm.prepend(messageDiv);
+                    return;
+                }
+
+                console.log('Form Submitted!');
+                console.log('Name:', name);
+                console.log('Email:', email);
+                console.log('Message:', message);
+
+                // In a real application, you'd send this data to a server:
+                /*
+                fetch('/submit-form', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name, email, message }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success:', data);
+                    // Show success message to user
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    // Show error message to user
+                });
+                */
+
+                // Clear the form after submission (for demo purposes)
+                contactForm.reset();
+                // Show a success message
+                // Instead of alert, you'd show a message in a div on the page
+                console.log('Message sent successfully!');
+                // Example of showing a message on the page:
+                // const successDiv = document.createElement('div');
+                // successDiv.textContent = 'Message sent successfully!';
+                // successDiv.className = 'text-green-500 text-center mt-4';
+                // contactForm.prepend(successDiv);
+            });
+        }
+    </script>
+</body>
+</html>
